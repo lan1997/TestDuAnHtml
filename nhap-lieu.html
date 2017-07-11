@@ -1,0 +1,142 @@
+<!DOCUMENT html>
+<html>
+<head>
+	<meta charset="utf8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>sinh viên</title>
+	<style>
+		.infor_avata
+			{
+				background: pink;
+				font-size: 3px;
+				color: white;
+				display: inline;
+				
+				
+			}
+			video {
+			    max-width: 100%;
+			    height: auto;
+			}
+			.main-text{
+				height: 50px;
+				width: 100%;
+				background-color: lightgrey;
+				text-align: center;
+			}
+			.main{
+				width: 960px;
+				margin: 0 auto;
+				background-color: pink;
+
+			}
+			img {
+				border: 1px solid #ddd;
+				border-radius: 4px;
+				padding: 5px;
+				width: 150px;
+			}
+
+			img:hover {
+				box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+			}
+	</style>
+	<script language="javascript">
+		function kiemtra(){
+			if(document.getElementById("hoten").value==""){
+				alert("bạn nhập vào họ tên");
+				document.getElementById("hoten").focus();
+			if(document.getElementById("sdt").value==""){
+				alert("bạn nhập vào số điện thoại");
+				document.getElementById("sdt").focus();
+			if(document.getElementById("truong").value==""){
+				alert("bạn nhập vào trường bạn học");
+				document.getElementById("truong").focus();
+			if(document.getElementById("email").value==""){
+				alert("bạn nhập vào email của bạn");
+				document.getElementById("email").focus();
+			if(document.getElementById("ngay sinh").value==""){
+				alert("bạn nhập vào ngày sinh");
+				document.getElementById("ngay sinh").focus();
+			if(document.getElementById("pass").value==""){
+				alert("bạn nhập vào mật khẩu");
+				document.getElementById("pass").focus();
+			
+			}
+		}
+	</script>
+</head>
+<body style="background-color: lightblue">
+	<div class="main-text">
+		<p style="font-family: verdana;font-size: 20px;color: red; text-align:center"> NGÀY HỘI TRẢI NGHIỆM TIẾNG ANH LỚN NHẤT </p>
+	</div>	
+	<div class="main">
+	
+		<div class="info_avatar">
+			<h3>	Hình ảnh của tôi</h3>
+		</div>
+		<a href=""><img src="lan-ham/avatar.jpg" width="100px" height="200px"/></a>
+		<video width="400" controls>
+			<source src="anh/Ngoisao1.flv" type="video/mp4">
+				<source src="anh/Ngoisao1.ogg" type="video/ogg">
+					Your browser does not support HTML5 video.
+				</video>
+
+
+			<div>
+			<form method="post" action="">
+				<table>
+					<tr>Họ Tên *</tr>	<br>
+					<tr> <input type="text" id="hoten" size="23"/></tr><br>
+
+
+
+					<tr>SỐ ĐIỆN THOẠI  *</tr><br>	
+					<tr> <input type="text" id="sdt"size="23"/></tr><br>
+
+
+					<tr>TRƯỜNG ĐẠI HỌC *</tr>	<br>
+					<tr> <input type="text" id="truong"size="23"/></tr><br>
+
+
+					<tr>ĐỊA CHI EMAIL*</tr>	<br>
+					<tr> <input type="text" id="email"size="23"/></tr><br>
+
+					<tr>NGÀY,THÁNG,NĂM SINH *</tr><br>	
+					<tr> <input type="text" id="ngay sinh"size="23"/></tr><br>
+
+					<tr>PASSWORD</tr><br>
+					<tr><input type="password" id="pass" size="23"/></tr><br>
+
+					<tr>CAM KẾT ĐI HỌC VÀ LÀM BÀI TẬP ĐẦY ĐỦ</tr><br>
+					<tr><textarea cols="50" rows="4"></textarea></tr><br>
+
+
+					<tr>LỊCH HỌC CÁC LỚP</tr><br>
+
+					<input type="radio"name="LỊCH HỌC CÁC LỚP"/> full - (TỐI) Lớp A28 - khai giảng vào tối 26/9 và học vào 18h20 tối thứ 2,5 hàng tuần. <br>
+					<input type="radio"name="LỊCH HỌC CÁC LỚP"/>full - (TỐI) Lớp A29 - khai giảng vào tối 27/9 và học vào 18h20 tối thứ 3,6 hàng tuần<br>
+					<input type="radio"name="LỊCH HỌC CÁC LỚP"/>full - (TỐI) Lớp A29 - khai giảng vào tối 27/9 và học vào 18h20 tối thứ 3,6 hàng tuần<br>
+					<input type="radio"name="LỊCH HỌC CÁC LỚP"/>full - (TỐI) Lớp A29 - khai giảng vào tối 27/9 và học vào 18h20 tối thứ 3,6 hàng tuần<br>
+					<input type="radio"name="LỊCH HỌC CÁC LỚP"/>full - (TỐI) Lớp A29 - khai giảng vào tối 27/9 và học vào 18h20 tối thứ 3,6 hàng tuần<br>
+
+			
+					<tr>
+					<select>
+						<option value="đại học kinh tế quốc dân"> đại học kinh tế quốc dân</option>
+						<option value="đại học bách khoa hà nội"> đại học bách khoa hà nội</option>
+						<option value="đại học xây dựng"> đại học xây dưng</option>
+						<option value="đại học khoa học tự nhiên"> đại học khoa học tự nhiên</option>
+					</select>
+					</tr
+					<tr>
+						<input type="button" value="liên hệ" onclick="kiemtra();">
+					</tr><br>
+				</table>
+
+			</form>
+		</div>
+	</div>
+
+</body>
+</html>
